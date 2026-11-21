@@ -22,7 +22,8 @@ class PipelineControllerTest {
     void shouldReturnDefaultMessage() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Projeto GitHub Actions - V1: API ativa e operando com sucesso!"));
+                .andExpect(content().string("Teste falhou 2"));
+
     }
 
     @Test
