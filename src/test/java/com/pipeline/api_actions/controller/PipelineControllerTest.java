@@ -23,6 +23,7 @@ class PipelineControllerTest {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Teste falhou 2"));
+
     }
 
     @Test
