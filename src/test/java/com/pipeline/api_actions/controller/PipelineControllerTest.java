@@ -22,7 +22,7 @@ class PipelineControllerTest {
     void shouldReturnDefaultMessage() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Teste falhou"));
+                .andExpect(content().string("Teste falhou 2"));
     }
 
     @Test
