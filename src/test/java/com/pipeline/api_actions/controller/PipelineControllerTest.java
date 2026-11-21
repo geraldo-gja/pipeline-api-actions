@@ -29,6 +29,6 @@ class PipelineControllerTest {
     void shouldReturnStatusMessage() throws Exception {
         mockMvc.perform(get("/status"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("falhou 3"));
+                .andExpect(content().string("Projeto GitHub Actions - V1: API ativa e operando com sucesso!"));
     }
 }
